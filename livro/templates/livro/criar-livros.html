@@ -1,0 +1,13 @@
+<h1>Este é um formulário de criação de livro</h1>
+
+    <div>
+      <form id="create-form"
+            action=""
+            method="post">
+        {% csrf_token %}
+        {{ form }}
+      <br/>
+      <br/>
+        <input type='submit' name='upload' value='Salvar'/>
+      </form>
+    </div>
